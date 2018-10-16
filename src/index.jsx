@@ -176,6 +176,7 @@ export default class Geocoder extends Component {
       inputPlaceholder,
       inputPosition,
       showLoader,
+      className,
       resultsClass,
       resultClass,
       resultFocusClass,
@@ -222,7 +223,7 @@ export default class Geocoder extends Component {
     );
 
     return (
-      <Components.Wrapper>
+      <Components.Wrapper className={className}>
         {inputPosition === 'top' && input}
         <Components.ResultList className={`
               ${showLoader && loading
@@ -257,6 +258,7 @@ Geocoder.propTypes = {
   source: PropTypes.string,
   accessToken: PropTypes.string.isRequired,
 
+  className: PropTypes.string,
   inputClass: PropTypes.string,
   resultClass: PropTypes.string,
   resultsClass: PropTypes.string,
