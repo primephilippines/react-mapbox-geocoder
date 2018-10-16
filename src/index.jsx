@@ -184,9 +184,9 @@ export default class Geocoder extends Component {
       Result: CustomResult,
       ResultLink: CustomResultLink,
       InputWrapper: CustomInputWrapper,
-      SeachIcon: CustomSearchIcon,
+      SearchIcon: CustomSearchIcon,
       Input: CustomInput,
-      Wraapper: CustomWrapper,
+      Wrapper: CustomWrapper,
     } = this.props;
 
     const {
@@ -268,9 +268,9 @@ Geocoder.propTypes = {
   Result: PropTypes.element,
   ResultLink: PropTypes.element,
   InputWrapper: PropTypes.element,
-  SeachIcon: PropTypes.element,
+  SearchIcon: PropTypes.element,
   Input: PropTypes.element,
-  Wraapper: PropTypes.element,
+  Wrapper: PropTypes.element,
 
   showLoader: PropTypes.bool,
   focusOnMount: PropTypes.bool,
@@ -299,9 +299,9 @@ Geocoder.defaultProps = {
   Result: null,
   ResultLink: null,
   InputWrapper: null,
-  SeachIcon: null,
+  SearchIcon: null,
   Input: null,
-  Wraapper: null,
+  Wrapper: null,
 
   inputPosition: 'top',
 
