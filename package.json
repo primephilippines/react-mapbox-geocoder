@@ -1,6 +1,6 @@
 {
-  "name": "@mapbox/react-geocoder",
-  "version": "3.1.0",
+  "name": "react-mapbox-geocoder",
+  "version": "1.0.0",
   "description": "a mapbox geocoder component",
   "main": "build/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mapbox/react-geocoder.git"
+    "url": "git@github.com:ralphstodomingo/react-mapbox-geocoder.git"
   },
   "keywords": [
     "react",
@@ -21,12 +21,12 @@
     "mapbox",
     "geo"
   ],
-  "author": "Tom MacWright",
+  "author": "Ralph Sto. Domingo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mapbox/react-geocoder/issues"
+    "url": "https://github.com/ralphstodomingo/react-mapbox-geocoder/issues"
   },
-  "homepage": "https://github.com/mapbox/react-geocoder",
+  "homepage": "https://github.com/ralphstodomingo/react-mapbox-geocoder",
   "peerDependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
