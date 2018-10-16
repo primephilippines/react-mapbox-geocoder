@@ -1,5 +1,5 @@
 {
-  "name": "ralphstodomingo/react-mapbox-geocoder",
+  "name": "react-mapbox-geocoder",
   "version": "1.0.0",
   "description": "a mapbox geocoder component",
   "main": "build/index.js",
