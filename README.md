@@ -6,15 +6,6 @@ npm install @mapbox/react-geocoder
 
 A geocoder component using Mapbox.
 
-## Storybook
-To see options in Storybook run:
-```
-yarn storybook
-```
-
-NOTE: You MUST put
-`export default 'your-api-key';` in `ACCESS_TOKEN.js` for this to work. 
-
 ## api
 
 An `accessToken` is assumed to be a valid Mapbox accessToken.
@@ -26,6 +17,7 @@ An `accessToken` is assumed to be a valid Mapbox accessToken.
   onSuggest=optional function
   source=optional string, default 'mapbox.places'
   endpoint=optional string, default 'http://api.tiles.mapbox.com'
+  className=optional string, for `styled-components` compatibility
   inputClass=optional string, default ''
   inputPlaceholder=optional string, default 'Search'
   resultClass=optional string, default ''
