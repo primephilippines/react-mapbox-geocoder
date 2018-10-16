@@ -32,10 +32,4 @@ An `accessToken` is assumed to be a valid Mapbox accessToken.
   />
 ```
 
-# Building
-Use Storybook to ensure everything looks right. Then
-
-```
-yarn build
-```
 
