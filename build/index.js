@@ -271,6 +271,7 @@
             inputPlaceholder = _props2.inputPlaceholder,
             inputPosition = _props2.inputPosition,
             showLoader = _props2.showLoader,
+            className = _props2.className,
             resultsClass = _props2.resultsClass,
             resultClass = _props2.resultClass,
             resultFocusClass = _props2.resultFocusClass,
@@ -278,9 +279,9 @@
             CustomResult = _props2.Result,
             CustomResultLink = _props2.ResultLink,
             CustomInputWrapper = _props2.InputWrapper,
-            CustomSearchIcon = _props2.SeachIcon,
+            CustomSearchIcon = _props2.SearchIcon,
             CustomInput = _props2.Input,
-            CustomWrapper = _props2.Wraapper;
+            CustomWrapper = _props2.Wrapper;
         var _state5 = this.state,
             results = _state5.results,
             loading = _state5.loading,
@@ -318,7 +319,7 @@
 
         return _react2.default.createElement(
           Components.Wrapper,
-          null,
+          { className: className },
           inputPosition === 'top' && input,
           _react2.default.createElement(
             Components.ResultList,
@@ -359,6 +360,7 @@
     source: _propTypes2.default.string,
     accessToken: _propTypes2.default.string.isRequired,
 
+    className: _propTypes2.default.string,
     inputClass: _propTypes2.default.string,
     resultClass: _propTypes2.default.string,
     resultsClass: _propTypes2.default.string,
@@ -368,9 +370,9 @@
     Result: _propTypes2.default.element,
     ResultLink: _propTypes2.default.element,
     InputWrapper: _propTypes2.default.element,
-    SeachIcon: _propTypes2.default.element,
+    SearchIcon: _propTypes2.default.element,
     Input: _propTypes2.default.element,
-    Wraapper: _propTypes2.default.element,
+    Wrapper: _propTypes2.default.element,
 
     showLoader: _propTypes2.default.bool,
     focusOnMount: _propTypes2.default.bool,
@@ -399,9 +401,9 @@
     Result: null,
     ResultLink: null,
     InputWrapper: null,
-    SeachIcon: null,
+    SearchIcon: null,
     Input: null,
-    Wraapper: null,
+    Wrapper: null,
 
     inputPosition: 'top',
 
