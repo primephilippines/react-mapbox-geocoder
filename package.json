@@ -1,6 +1,6 @@
 {
   "name": "react-mapbox-geocoder",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a mapbox geocoder component",
   "main": "build/index.js",
   "scripts": {
@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/ralphstodomingo/react-mapbox-geocoder",
   "peerDependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "styled-components": "^3.2.6",
     "styled-icons": "^2.3.1"
   },

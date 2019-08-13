@@ -27,6 +27,7 @@ export default class Geocoder extends Component {
       value: '',
     };
 
+    this.input = React.createRef();
     this.onInput = this.onInput.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
     this.clickOption = this.clickOption.bind(this);
@@ -37,7 +38,7 @@ export default class Geocoder extends Component {
 
   componentDidMount() {
     const { focusOnMount } = this.props;
-    if (focusOnMount) this.input.focus();
+    if (focusOnMount) this.input.current.focus();
   }
 
   onChange({ target }) {
@@ -166,7 +167,7 @@ export default class Geocoder extends Component {
     this.setState({ focus: listLocation });
 
     // focus on the input after click to maintain key traversal
-    this.input.focus();
+    this.input.current.focus();
     return false;
   }
 
@@ -210,7 +211,7 @@ export default class Geocoder extends Component {
       <Components.InputWrapper>
         <Components.SearchIcon />
         <Components.Input
-          innerRef={(ref) => { this.input = ref; }}
+          ref={this.input}
           className={inputClass}
           onInput={this.onInput}
           onKeyDown={this.onKeyDown}
